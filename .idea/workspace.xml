@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d6f8933-1aeb-4221-9a22-674231b58fcf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="canv.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="7d6f8933-1aeb-4221-9a22-674231b58fcf" time="1376402399979" ignored="false" />
+    <file path="/Dummy.txt" changelist="7d6f8933-1aeb-4221-9a22-674231b58fcf" time="1376404352364" ignored="false" />
     <file path="/app.js" changelist="7d6f8933-1aeb-4221-9a22-674231b58fcf" time="1376402372186" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +40,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="125" selection-start="200" selection-end="200" vertical-scroll-proportion="0.15858209">
+            <state line="5" column="122" selection-start="185" selection-end="197" vertical-scroll-proportion="0.15858209">
               <folding />
             </state>
           </provider>
@@ -214,7 +213,11 @@
       <created>1376402403044</created>
       <updated>1376402403044</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="init">
+      <created>1376404355250</created>
+      <updated>1376404355250</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -338,7 +341,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="125" selection-start="200" selection-end="200" vertical-scroll-proportion="0.15858209">
+        <state line="5" column="122" selection-start="185" selection-end="197" vertical-scroll-proportion="0.15858209">
           <folding />
         </state>
       </provider>
