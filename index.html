@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset=utf-8>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <meta name=apple-mobile-web-app-capable content=yes>
+    <meta name=apple-mobile-web-app-status-bar-style content=black>
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div id='page'>
+<div id='viewport'>
+<div id='mountain_wrapper' class='canvas_wrapper'><canvas id='mountains_canvas' width='3000px' height='480px'></canvas></div>
+<div id='grass_wrapper' class='canvas_wrapper'><canvas id='grass_canvas' width='3000px' height='480px' ></canvas></div>
+<div id='trees_wrapper' class='canvas_wrapper'><canvas id='trees_canvas' width='3000px' height='480px' ></canvas></div>
+<div id='marker_wrapper' class='canvas_wrapper'></div>
+</div>
+<div id="controls">
+    <input type="button" id="play" value="play"/>
+    <input type="button" id="reverse" value="reverse"/>
+</div>
+</div>
+<script src='lib/kinetic-v4.6.0.min.js'></script>
+<script src="lib/zepto.js"></script>
+<script src="js/status.js" defer="defer"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
