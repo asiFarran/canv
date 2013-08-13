@@ -13,8 +13,8 @@ var trackScreen = {
                     height: 480
                 },
                 device : {
-                    width: screen.width,
-                    height: screen.height
+                    width: document.documentElement.clientWidth,
+                    height: document.documentElement.clientHeight
                 }
             },
             aspect: {
