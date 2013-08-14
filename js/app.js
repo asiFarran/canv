@@ -74,9 +74,14 @@ var trackScreen = {
 
         var step0Offset = parseInt(-1200 * layout.scale) + 'px'
         util.updateCssRule('#mountain_wrapper.step0','-webkit-transform','translate3d('+step0Offset+',0,0)');
+        util.updateCssRule('#mountain_wrapper.step0.out','-webkit-transform','translate3d('+step0Offset+',-100%,0)');
         util.updateCssRule('#trees_wrapper.step0','-webkit-transform','translate3d('+step0Offset+',0,0)');
+        util.updateCssRule('#trees_wrapper.step0.out','-webkit-transform','translate3d('+step0Offset+',-100%,0)');
         util.updateCssRule('#grass_wrapper.step0','-webkit-transform','translate3d('+step0Offset+',0,0)');
+        util.updateCssRule('#grass_wrapper.step0.out','-webkit-transform','translate3d('+step0Offset+',-100%,0)');
         util.updateCssRule('#marker_wrapper.step0','-webkit-transform','translate3d('+step0Offset+',0,0)');
+        util.updateCssRule('#marker_wrapper.step0.out','-webkit-transform','translate3d('+step0Offset+',-100%,0)');
+        util.updateCssRule('.canvas_wrapper.out','-webkit-transform','translate3d(0,-100%,0)');
 
         var stage = new Kinetic.Stage({
             container: 'marker_wrapper',
@@ -193,7 +198,14 @@ Zepto(function($){
 
     trackScreen.initCanvases(layout);
 
-
+    $(document.body).on( 'webkitTransitionEnd',
+        function( event ) {
+            var src = $(event.srcElement);
+                console.log(src);
+           if(src.hasClass('in') ){
+               src.removeClass('in');
+           }
+        } );
 
     $('#play').click(function(){
         $('.canvas_wrapper').addClass('step0');
@@ -201,6 +213,15 @@ Zepto(function($){
 
     $('#reverse').click(function(){
         $('.canvas_wrapper').removeClass('step0');
+    });
+
+    $('#out').click(function(){
+        $('.canvas_wrapper').addClass('out');
+    });
+
+    $('#in').click(function(){
+        $('.canvas_wrapper').addClass('in');
+        $('.canvas_wrapper').removeClass('out');
     });
 
 })
